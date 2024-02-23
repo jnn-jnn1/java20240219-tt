@@ -1,4 +1,4 @@
-package c02.lecture.p02type;
+package ch02.lecture.p02type;
 
 public class C01Type {
     public static void main(String[] args) {
@@ -15,6 +15,6 @@ public class C01Type {
 
         // 2.참조타입(reference type)
         // 원시타입빼고 다
-        
+
     }
 }

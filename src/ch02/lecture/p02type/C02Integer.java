@@ -1,4 +1,4 @@
-package c02.lecture.p02type;
+package ch02.lecture.p02type;
 
 public class C02Integer {
     public static void main(String[] args) {
@@ -20,15 +20,17 @@ public class C02Integer {
 //        b = 3.14; //x
 
 
-        // long
-        long c = 2_147_483_648L;
-        long d = 329842;
-        long e = 2_147_483_648L;
-        long f = 23423L;
+//        // long
+//        long c = 2_147_483_648L;
+//        long d = 329842;
+//        long e = 2_147_483_648L;
+//        long f = 23423L;
 //        int g = 243L;
 
 
         // 내일은 byte, short 배울 예정
         // byte, short
+
+
     }
 }

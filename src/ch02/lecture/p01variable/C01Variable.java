@@ -1,4 +1,4 @@
-package c02.lecture.p01variable;
+package ch02.lecture.p01variable;
 
 public class C01Variable {
     public static void main(String[] args) {
@@ -47,7 +47,6 @@ public class C01Variable {
         int $;
         int c_d;
         int _e;
-
 
 
         // 변수명 작성 관습

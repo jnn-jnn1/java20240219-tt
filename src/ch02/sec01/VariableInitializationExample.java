@@ -1,4 +1,4 @@
-package c02.sec01;
+package ch02.sec01;
 
 public class VariableInitializationExample {
     // 4~13 줄의 코드 작성
