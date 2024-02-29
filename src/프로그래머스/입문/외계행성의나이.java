@@ -2,33 +2,38 @@ package 프로그래머스.입문;
 
 public class 외계행성의나이 {
     public static void main(String[] args) {
-        char[] abc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'};
-        int age = 100;
-        int[] age1 = new int[4];
-        int i = 0;
-        int num = 0;
+        int age = 1000;
+        char[] abc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
         int age2 = age;
-        if (age2 >= 0) {
-            age2 /= 10;
-            num++;
+        int count = 0;
+
+        while (age >= 10) {
+            age /= 10;
+            count++;
+            System.out.println("count");
+            System.out.println(count);
         }
-        while (true) {
-            if (num > 0) {
-                age1[i] = age / (10 * num);
-                age /= 10;
-                i++;
-                num--;
-                System.out.println("age : " + age);
+        int[] age_sp = new int[count + 1];
+        String answer = "";
+
+        for (int i = 0; i <= count; i++) {
+            if (age2 >= 10) {
+                age_sp[i] = age2 / (int) (Math.pow(10, count));
+                count--;
+                System.out.println("if");
+                System.out.println(count);
+                System.out.println("age_sp[i]");
+                answer += abc[age_sp[i]];
+                System.out.println(age_sp[i]);
+                System.out.println("abc[]");
+                System.out.println(abc[age_sp[i]]);
             } else {
-                age1[i] = age % 10;
-                break;
+                age_sp[i] = age2 % 10;
+                answer += abc[age_sp[i]];
+                System.out.println("else");
+                System.out.println(age_sp[i]);
             }
         }
-        for (int item : age1)
-            System.out.println(item);
-        String answer = "";
-        for (int j = 0; j < i; j++) {
-            answer += abc[age1[j]];
-        }
+        System.out.println(answer);
     }
 }
