@@ -3,8 +3,8 @@ package ch05.p2string;
 public class C08IndexOf {
     public static void main(String[] args) {
         String s1 = "java, spring, css, spring, java";
-        int i1 = s1.indexOf("java");
-        int i2 = s1.indexOf("ring");
+        int i1 = s1.indexOf("java"); // 0
+        int i2 = s1.indexOf("ring"); // 8
         int i3 = s1.indexOf("html"); // 포함되지 않는 경우 -1 반환
 
         System.out.println("i1 = " + i1);
